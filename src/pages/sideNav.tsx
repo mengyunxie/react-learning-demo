@@ -8,8 +8,8 @@ class SideNav extends React.Component {
   public render() {
     return (
       <MenuList>
-        {routes.map(route => (
-          <Link to={route.path} className="Nav-link">
+        {routes.map((route, index) => (
+          <Link key={index} to={route.path} className="Nav-link">
             <MenuItem>{route.name}</MenuItem>
           </Link>
         ))}
