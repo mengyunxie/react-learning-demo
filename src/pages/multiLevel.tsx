@@ -1,12 +1,19 @@
 import * as React from "react";
-import DeleteOutlined from "@material-ui/icons/DeleteOutlined";
+import { Route } from "react-router-dom";
+import multiLevelRouter from "../routers/multiLevelRouter";
+
 class MultiLevel extends React.Component {
   public render() {
     return (
       <div>
-        <h2>
-          Multi-level <DeleteOutlined className="test" />
-        </h2>
+        {multiLevelRouter.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            component={route.component}
+            exact={route.exact}
+          />
+        ))}
       </div>
     );
   }

@@ -9,7 +9,7 @@ import green from "@material-ui/core/colors/green";
 import Grid from "@material-ui/core/Grid";
 
 import "./App.css";
-import routes from "./routers/router";
+import sideNavRouter from "./routers/sideNavRouter";
 
 import Header from "./pages/header";
 import SideNav from "./pages/sideNav";
@@ -39,7 +39,7 @@ class App extends React.Component {
                 <SideNav />
               </Grid>
               <Grid item={true} xs={8}>
-                {routes.map((route, index) => (
+                {sideNavRouter.map((route, index) => (
                   <Route
                     key={index}
                     path={route.path}

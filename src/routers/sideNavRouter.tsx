@@ -2,7 +2,7 @@ import MultiLevel from "../pages/multiLevel";
 import Home from "../pages/home";
 import MyTable from "../pages/table";
 
-const routes = [
+const sideNavRouter = [
   {
     name: "Home",
     path: "/",
@@ -21,4 +21,4 @@ const routes = [
   }
 ];
 
-export default routes;
+export default sideNavRouter;
