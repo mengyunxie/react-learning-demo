@@ -1,5 +1,6 @@
 import Page1 from "../pages/page1";
 import Page2 from "../pages/page2";
+import Form from "../pages/form";
 
 const multiLevelRouter = [
   {
@@ -17,6 +18,11 @@ const multiLevelRouter = [
     name: "Page2",
     path: "/multiLevel/page2",
     component: Page2
+  },
+  {
+    name: "Form",
+    path: "/multiLevel/form",
+    component: Form
   }
 ];
 
