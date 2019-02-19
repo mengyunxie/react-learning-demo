@@ -38,7 +38,7 @@ class Form extends React.Component {
         <span>{this.state.checked ? "true" : "false"}</span>
         <div>
           <Button variant="contained" color="primary" onClick={this.save}>
-            Primary
+            save
           </Button>
         </div>
 
